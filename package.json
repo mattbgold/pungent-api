@@ -1,0 +1,30 @@
+{
+  "name": "pungent-api",
+  "version": "1.0.0",
+  "description": "An api for generating cheesy puns",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbgold/pungent-api.git"
+  },
+  "author": "Matt Gold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattbgold/pungent-api/issues"
+  },
+  "homepage": "https://github.com/mattbgold/pungent-api#readme",
+  "devDependencies": {
+    "@types/express": "^4.0.37",
+    "@types/node": "^8.0.46",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "pungent": "^1.0.1"
+  }
+}
