@@ -4,7 +4,13 @@
     "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
     "module": "commonjs",                     /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd' or 'es2015'. */
     "outDir": "./dist",
-    "strict": true                            /* Enable all strict type-checking options. */
-    
+    "strict": true,                         /* Enable all strict type-checking options. */
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "byline"
+    ] 
   }
 }
