@@ -19,7 +19,8 @@ export function bootstrapApi(): any {
         const generator = new PunGenerator({
             punFrequency: req.body.options.punFrequency || 1,
             punScoreTolerance: req.body.options.punScoreTolerance || .5,
-            replacementTolerance: req.body.options.replacementTolerance || .5
+            replacementTolerance: req.body.options.replacementTolerance || .5,
+            retainFormatting: req.body.options.retainFormatting || true
         });
 
         let resultLines: string[] = 
