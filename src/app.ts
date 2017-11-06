@@ -20,7 +20,7 @@ export function bootstrapApi(): any {
             punFrequency: req.body.options.punFrequency || 1,
             punScoreTolerance: req.body.options.punScoreTolerance || .5,
             replacementTolerance: req.body.options.replacementTolerance || .5,
-            retainFormatting: req.body.options.retainFormatting || true
+            retainFormatting: req.body.options.retainFormatting === undefined ? true : req.body.options.retainFormatting
         });
 
         let resultLines: string[] = 
